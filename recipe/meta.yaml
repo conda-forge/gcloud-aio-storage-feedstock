@@ -1,5 +1,5 @@
 {% set name = "gcloud-aio-storage" %}
-{% set version = "8.0.0" %}
+{% set version = "8.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 56f54e2cbf4d605563f6783769913313ff05af1dbfc0a3088b2833a74697c8b2
+  sha256: a0c3f8f0510120d9250d76683e65ba1e678fd2c92fb128ff6ec4eefab2ba49fa
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - gcloud-aio-auth >=3.6.0,<5.0.0
     - pyasn1-modules >=0.2.1,<0.3.0
     - rsa >=3.1.4,<5.0.0
+    - setuptools >=66.0.0,<67.0.0
 
 test:
   imports:
