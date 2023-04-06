@@ -1,13 +1,13 @@
 {% set name = "gcloud-aio-storage" %}
-{% set version = "8.1.0" %}
+{% set version = "8.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: a0c3f8f0510120d9250d76683e65ba1e678fd2c92fb128ff6ec4eefab2ba49fa
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gcloud_aio_storage-{{ version }}.tar.gz
+  sha256: d8989a395b1350fd1838dff0cdcef5036c52890094c68612c60f820d25438038
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - poetry-core >=1.0.0
   run:
     - python >=3.7,<4.0
-    - aiofiles >=0.6.0,<23.0.0
+    - aiofiles >=0.6.0,<24.0.0
     - gcloud-aio-auth >=3.6.0,<5.0.0
     - pyasn1-modules >=0.2.1,<0.3.0
     - rsa >=3.1.4,<5.0.0
