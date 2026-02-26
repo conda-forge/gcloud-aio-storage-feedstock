@@ -1,5 +1,5 @@
 {% set name = "gcloud-aio-storage" %}
-{% set version = "9.6.1" %}
+{% set version = "9.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gcloud_aio_storage-{{ version }}.tar.gz
-  sha256: e3e621ab5e870d29384a0a7935ac68af12dd19caf93f1c91b0bc70f939333bfb
+  sha256: 852a75a35395b052c28282246ae386ac5bf090bf80a8c4310872ae918b81e328
 
 build:
   noarch: python
