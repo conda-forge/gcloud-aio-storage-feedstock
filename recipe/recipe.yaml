@@ -20,13 +20,13 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - poetry-core >=1.0.0
     - pip
+    - poetry-core >=1.0.0
   run:
     - python >=${{ python_min }},<4.0
     - aiofiles >=0.6.0,<26.0.0
-    - gcloud-aio-auth >=5.4.4,<6.0.0
     - cryptography >=3.1.0,<52.0.0
+    - gcloud-aio-auth >=5.4.4,<6.0.0
 tests:
   - python:
       imports:
